@@ -1,0 +1,12 @@
+create DATABASE ICAIR_db;
+USE ICAIR_db;
+
+CREATE TABLE registrations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phoneNo VARCHAR(20) NOT NULL,
+    country VARCHAR(50) NOT NULL,
+    sessions VARCHAR(255) NOT NULL,
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
